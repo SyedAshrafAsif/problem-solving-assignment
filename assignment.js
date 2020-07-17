@@ -57,7 +57,7 @@ console.log("Total number of bricks:", output);
 
 //4. Finding the smallest name in an array.
 function tinyFriend(friendsName){
-        return friendsName.filter(friendsName => typeof friendsName === "string").sort((a, b) => a.length - b.length)[0];
+        return friendsName.sort((currentName, smallestName) => currentName.length - smallestName.length)[0];
       }
 friendsName = ["Ronaldo", "Messi", "Lewandowski", "Ozil", "Neymar", "Griezmann"];
 let nameOutput = tinyFriend(friendsName);
